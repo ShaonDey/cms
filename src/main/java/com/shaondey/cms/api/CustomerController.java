@@ -39,4 +39,14 @@ public class CustomerController {
 //            return customerService.getCustomer(customerId);
 //    }
 
+    @PutMapping(value = "/{customerId}")
+    public Customer updateCustomer(@PathVariable int customerId, @RequestBody Customer customer) {
+        return customerService.updateCustomer(customerId, customer);
+    }
+
+    @DeleteMapping(params = "customerId")
+    public void deleteCustomer(@RequestParam(name = "customerId", defaultValue = "0") int customerId) {
+        customerService.deleteCustomer(customerId);
+    }
+
 }
