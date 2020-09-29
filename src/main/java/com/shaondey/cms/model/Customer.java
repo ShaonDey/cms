@@ -1,9 +1,15 @@
 package com.shaondey.cms.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Customer {
+    @JsonProperty(value = "id")
     private int customerId;
+    @JsonProperty(value = "firstName")
     private String customerFirstName;
+    @JsonProperty(value = "lastName")
     private String customerLastName;
+    @JsonProperty(value = "email")
     private String customerEmail;
 
     public int getCustomerId() {
