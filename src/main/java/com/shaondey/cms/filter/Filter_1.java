@@ -1,11 +1,13 @@
 package com.shaondey.cms.filter;
 
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.*;
 import java.io.IOException;
 
 @Service
+@Order(3)
 public class Filter_1 implements Filter {
 
     @Override
