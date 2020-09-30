@@ -1,11 +1,11 @@
 package com.shaondey.cms.filter;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import javax.servlet.*;
 import java.io.IOException;
 
-@Component
+@Service
 public class PersonalFilter implements Filter {
 
     @Override
