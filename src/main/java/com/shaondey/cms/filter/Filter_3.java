@@ -6,13 +6,13 @@ import javax.servlet.*;
 import java.io.IOException;
 
 @Service
-public class Filter_1 implements Filter {
+public class Filter_3 implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        System.out.println("Filter 1 is called before endpoint execution");
+        System.out.println("Filter 3 is called before endpoint execution");
         chain.doFilter(request, response);
-        System.out.println("Filter 1 is called after endpoint execution but before returning response");
+        System.out.println("Filter 3 is called after endpoint execution but before returning response");
     }
 
 }
